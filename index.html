@@ -28,6 +28,52 @@
       <div class="backdrop">
         <div class="window">
           <button class="close-button" data-modal-close>X</button>
+          <form class="form-card">
+            <p class="">Zostaw swoje dane w formularzu poniżej</p>
+            <label class="label-window">
+              Imie
+              <input
+                class="window-form"
+                type="text"
+                name="customer_name"
+                placeholder=""
+              />
+            </label>
+            <label class="label-window">
+              Telefon
+              <input
+                class="window-form"
+                type="tel"
+                name="phone_number"
+                placeholder=""
+              />
+            </label>
+            <label class="label-window">
+              Email
+              <input
+                class="window-form"
+                type="email"
+                name="customer_email"
+                placeholder=""
+              />
+            </label>
+            <label class="label-window">
+              Komentarz
+              <textarea
+                class="textarea-window-form"
+                type="textarea"
+                name="comment_form"
+                placeholder="Wprowadź tekst"
+              ></textarea>
+            </label>
+            <label>
+              <input type="checkbox" name="rule_form" />
+              Oświadczam iż akceptuję <a href="">Regulamin</a> i
+              <a href="">Politykę Prywatności.</a>
+            </label>
+
+            <button type="submit" class="button-form">Wyślij</button>
+          </form>
         </div>
       </div>
     </div>
@@ -497,7 +543,7 @@
               <a class="footer-ad2" href="tel:+48111111111">+48 111 111 111</a>
             </li>
             <li class="item-icon-social-footer">
-              <h5 class="footer-to-us">DOŁĄCZ DO NAS</h5>
+              <h5 class="footer-txt">DOŁĄCZ DO NAS</h5>
               <svg
                 class="icon-social-footer"
                 width="44"
@@ -530,6 +576,26 @@
               >
                 <use href="./images/icons.svg#icon-linkedin-1"></use>
               </svg>
+            </li>
+            <li class="">
+              <h5 class="footer-txt">ZAPISZ SIĘ DO NEWSLETTERA</h5>
+              <form class="form-newsletter">
+                <label class="emailuser" for="user_email">Email</label>
+                <input
+                  class="form-email-imput"
+                  type="email"
+                  name="e-mail"
+                  placeholder="E-mail"
+                  for="user_email"
+                />
+
+                <button class="newsletter-button" type="submit">
+                  Zapisz się
+                  <svg class="icon-paper-plane" width="24" height="24">
+                    <use href="./images/icons.svg#icon-paper-plane"></use>
+                  </svg>
+                </button>
+              </form>
             </li>
           </ul>
         </address>
